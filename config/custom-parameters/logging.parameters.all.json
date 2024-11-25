@@ -1,0 +1,109 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "parameters": {
+    "parDataCollectionRuleChangeTrackingName": {
+      "value": "alz-ama-ct-dcr"
+    },
+    "parDataCollectionRuleMDFCSQLName": {
+      "value": "alz-ama-mdfcsql-dcr"
+    },
+    "parAutomationAccountPublicNetworkAccess": {
+      "value": true
+    },
+    "parLogAnalyticsWorkspaceSolutionsLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Logging Module."
+      }
+    },
+    "parGlobalResourceLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Logging Module."
+      }
+    },
+    "parDataCollectionRuleVMInsightsLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Logging Module."
+      }
+    },
+    "parTelemetryOptOut": {
+      "value": false
+    },
+    "parDataCollectionRuleVMInsightsName": {
+      "value": "alz-ama-vmi-dcr"
+    },
+    "parLogAnalyticsWorkspaceLogRetentionInDays": {
+      "value": 365
+    },
+    "parAutomationAccountUseManagedIdentity": {
+      "value": true
+    },
+    "parLogAnalyticsWorkspaceCapacityReservationLevel": {
+      "value": 100
+    },
+    "parLogAnalyticsLinkedServiceAutomationAccountName": {
+      "value": "Automation"
+    },
+    "parAutomationAccountName": {
+      "value": "alz-automation-account"
+    },
+    "parUserAssignedManagedIdentityName": {
+      "value": "alz-umi-identity"
+    },
+    "parUseSentinelClassicPricingTiers": {
+      "value": false
+    },
+    "parLogAnalyticsWorkspaceSolutions": {
+      "value": [
+        "SecurityInsights"
+      ]
+    },
+    "parAutomationAccountLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Logging Module."
+      }
+    },
+    "parTags": {
+      "value": {
+        "Environment": "live"
+      }
+    },
+    "parLogAnalyticsWorkspaceLinkAutomationAccount": {
+      "value": true
+    },
+    "parAutomationAccountLocation": {
+      "value": "australiaeast"
+    },
+    "parLogAnalyticsWorkspaceName": {
+      "value": "alz-log-analytics"
+    },
+    "parLogAnalyticsWorkspaceSkuName": {
+      "value": "PerGB2018"
+    },
+    "parDataCollectionRuleChangeTrackingLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Logging Module."
+      }
+    },
+    "parLogAnalyticsWorkspaceLocation": {
+      "value": "australiaeast"
+    },
+    "parDataCollectionRuleMDFCSQLLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Logging Module."
+      }
+    },
+    "parLogAnalyticsWorkspaceLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Logging Module."
+      }
+    }
+  },
+  "contentVersion": "1.0.0.0"
+}
