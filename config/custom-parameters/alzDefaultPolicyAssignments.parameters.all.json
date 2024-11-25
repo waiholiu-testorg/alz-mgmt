@@ -1,0 +1,93 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "parameters": {
+    "parTopLevelPolicyAssignmentSovereigntyGlobal": {
+      "value": {
+        "parPolicyEffect": "Deny",
+        "parListOfAllowedLocations": [],
+        "parTopLevelSovereigntyGlobalPoliciesEnable": false
+      }
+    },
+    "parTopLevelManagementGroupPrefix": {
+      "value": "alz"
+    },
+    "parExcludedPolicyAssignments": {
+      "value": []
+    },
+    "parLandingZoneMgConfidentialEnable": {
+      "value": false
+    },
+    "parMsDefenderForCloudEmailSecurityContact": {
+      "value": "wai.liu@microsoft.com"
+    },
+    "parTelemetryOptOut": {
+      "value": false
+    },
+    "parAutomationAccountName": {
+      "value": "alz-automation-account"
+    },
+    "parLogAnalyticsWorkspaceLogRetentionInDays": {
+      "value": "365"
+    },
+    "parLogAnalyticsWorkSpaceAndAutomationAccountLocation": {
+      "value": "australiaeast"
+    },
+    "parLogAnalyticsWorkspaceResourceCategory": {
+      "value": "allLogs"
+    },
+    "parVmBackupExclusionTagName": {
+      "value": ""
+    },
+    "parVmBackupExclusionTagValue": {
+      "value": []
+    },
+    "parLandingZoneChildrenMgAlzDefaultsEnable": {
+      "value": true
+    },
+    "parTopLevelManagementGroupSuffix": {
+      "value": ""
+    },
+    "parUserAssignedManagedIdentityResourceId": {
+      "value": "/subscriptions/eaa25043-05d8-4320-a858-ae0c551b3ccb/resourcegroups/rg-alz-logging/providers/Microsoft.ManagedIdentity/userAssignedIdentities/alz-umi-identity"
+    },
+    "parPlatformMgAlzDefaultsEnable": {
+      "value": true
+    },
+    "parPolicyAssignmentSovereigntyConfidential": {
+      "value": {
+        "parPolicyEffect": "Deny",
+        "parAllowedVirtualMachineSKUs": [],
+        "parAllowedResourceTypes": [],
+        "parListOfAllowedLocations": []
+      }
+    },
+    "parPrivateDnsResourceGroupId": {
+      "value": "/subscriptions/eaa25043-05d8-4320-a858-ae0c551b3ccb/resourceGroups/rg-alz-connectivity"
+    },
+    "parDataCollectionRuleChangeTrackingResourceId": {
+      "value": "/subscriptions/eaa25043-05d8-4320-a858-ae0c551b3ccb/resourcegroups/rg-alz-logging/providers/Microsoft.Insights/dataCollectionRules/alz-ama-ct-dcr"
+    },
+    "parDataCollectionRuleVMInsightsResourceId": {
+      "value": "/subscriptions/eaa25043-05d8-4320-a858-ae0c551b3ccb/resourcegroups/rg-alz-logging/providers/Microsoft.Insights/dataCollectionRules/alz-ama-vmi-dcr"
+    },
+    "parDisableAlzDefaultPolicies": {
+      "value": false
+    },
+    "parDdosProtectionPlanId": {
+      "value": "/subscriptions/eaa25043-05d8-4320-a858-ae0c551b3ccb/resourceGroups/rg-alz-connectivity/providers/Microsoft.Network/ddosProtectionPlans/alz-ddos-plan"
+    },
+    "parLogAnalyticsWorkspaceResourceId": {
+      "value": "/subscriptions/eaa25043-05d8-4320-a858-ae0c551b3ccb/resourcegroups/rg-alz-logging/providers/microsoft.operationalinsights/workspaces/alz-log-analytics"
+    },
+    "parDdosEnabled": {
+      "value": true
+    },
+    "parPrivateDnsZonesNamesToAuditInCorp": {
+      "value": []
+    },
+    "parDataCollectionRuleMDFCSQLResourceId": {
+      "value": "/subscriptions/eaa25043-05d8-4320-a858-ae0c551b3ccb/resourcegroups/rg-alz-logging/providers/Microsoft.Insights/dataCollectionRules/ama-mdfcsql-default-dcr"
+    }
+  },
+  "contentVersion": "1.0.0.0"
+}
