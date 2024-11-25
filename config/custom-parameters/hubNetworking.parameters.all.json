@@ -1,0 +1,240 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "parameters": {
+    "parVpnGatewayConfig": {
+      "value": {
+        "activeActive": false,
+        "enableBgp": false,
+        "sku": "VpnGw1AZ",
+        "vpnClientConfiguration": {},
+        "enableDnsForwarding": false,
+        "vpnType": "RouteBased",
+        "name": "alz-Vpn-Gateway",
+        "enableBgpRouteTranslationForNat": false,
+        "bgpsettings": {
+          "bgpPeeringAddress": "",
+          "peerWeight": "5",
+          "asn": "65515"
+        },
+        "bgpPeeringAddress": "",
+        "gatewayType": "Vpn",
+        "generation": "Generation1"
+      }
+    },
+    "parPublicIpSuffix": {
+      "value": "-PublicIP"
+    },
+    "parAzFirewallPoliciesName": {
+      "value": "alz-azfwpolicy-australiaeast"
+    },
+    "parGlobalResourceLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Hub Networking Module."
+      }
+    },
+    "parPublicIpSku": {
+      "value": "Standard"
+    },
+    "parVirtualNetworkGatewayLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Hub Networking Module."
+      }
+    },
+    "parAzFirewallName": {
+      "value": "alz-azfw-australiaeast"
+    },
+    "parExpressRouteGatewayEnabled": {
+      "value": true
+    },
+    "parDdosPlanName": {
+      "value": "alz-ddos-plan-australiaeast"
+    },
+    "parDnsServerIps": {
+      "value": []
+    },
+    "parHubNetworkAddressPrefix": {
+      "value": "10.20.0.0/16"
+    },
+    "parAzFirewallAvailabilityZones": {
+      "value": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "parAzBastionName": {
+      "value": "alz-bastion-australiaeast"
+    },
+    "parAzFirewallDnsServers": {
+      "value": []
+    },
+    "parAzFirewallEnabled": {
+      "value": true
+    },
+    "parPublicIpPrefix": {
+      "value": ""
+    },
+    "parAzErGatewayAvailabilityZones": {
+      "value": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "parVirtualNetworkLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Hub Networking Module."
+      }
+    },
+    "parAzureFirewallLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Hub Networking Module."
+      }
+    },
+    "parPrivateDnsZones": {
+      "value": []
+    },
+    "parHubRouteTableLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Hub Networking Module."
+      }
+    },
+    "parAzFirewallDnsProxyEnabled": {
+      "value": true
+    },
+    "parDdosLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Hub Networking Module."
+      }
+    },
+    "parExpressRouteGatewayConfig": {
+      "value": {
+        "activeActive": false,
+        "enableBgp": false,
+        "sku": "ErGw1Az",
+        "enableDnsForwarding": false,
+        "vpnType": "RouteBased",
+        "name": "alz-ExpressRoute-Gateway",
+        "enableBgpRouteTranslationForNat": false,
+        "bgpsettings": {
+          "bgpPeeringAddress": "",
+          "peerWeight": "5",
+          "asn": "65515"
+        },
+        "bgpPeeringAddress": "",
+        "gatewayType": "ExpressRoute",
+        "generation": "None"
+      }
+    },
+    "parVpnGatewayEnabled": {
+      "value": true
+    },
+    "parPrivateDnsZonesEnabled": {
+      "value": true
+    },
+    "parHubNetworkName": {
+      "value": "alz-hub-australiaeast"
+    },
+    "parAzBastionEnabled": {
+      "value": true
+    },
+    "parAzFirewallIntelMode": {
+      "value": "Alert"
+    },
+    "parAzBastionTunneling": {
+      "value": false
+    },
+    "parAzVpnGatewayAvailabilityZones": {
+      "value": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "parSubnets": {
+      "value": [
+        {
+          "routeTableId": "",
+          "name": "AzureBastionSubnet",
+          "ipAddressRange": "10.20.0.0/24",
+          "networkSecurityGroupId": ""
+        },
+        {
+          "routeTableId": "",
+          "name": "GatewaySubnet",
+          "ipAddressRange": "10.20.254.0/24",
+          "networkSecurityGroupId": ""
+        },
+        {
+          "routeTableId": "",
+          "name": "AzureFirewallSubnet",
+          "ipAddressRange": "10.20.255.0/24",
+          "networkSecurityGroupId": ""
+        },
+        {
+          "routeTableId": "",
+          "name": "AzureFirewallManagementSubnet",
+          "ipAddressRange": "10.20.253.0/24",
+          "networkSecurityGroupId": ""
+        }
+      ]
+    },
+    "parBastionLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Hub Networking Module."
+      }
+    },
+    "parAzBastionSku": {
+      "value": "Standard"
+    },
+    "parPrivateDNSZonesLock": {
+      "value": {
+        "kind": "None",
+        "notes": "This lock was created by the ALZ Bicep Hub Networking Module."
+      }
+    },
+    "parLocation": {
+      "value": "australiaeast"
+    },
+    "parHubRouteTableName": {
+      "value": "alz-hub-routetable-australiaeast"
+    },
+    "parBastionOutboundSshRdpPorts": {
+      "value": [
+        "22",
+        "3389"
+      ]
+    },
+    "parDisableBgpRoutePropagation": {
+      "value": false
+    },
+    "parAzBastionNsgName": {
+      "value": "nsg-AzureBastionSubnet-australiaeast"
+    },
+    "parTelemetryOptOut": {
+      "value": false
+    },
+    "parDdosEnabled": {
+      "value": true
+    },
+    "parTags": {
+      "value": {
+        "Environment": "live"
+      }
+    },
+    "parAzFirewallTier": {
+      "value": "Standard"
+    },
+    "parCompanyPrefix": {
+      "value": "alz"
+    }
+  },
+  "contentVersion": "1.0.0.0"
+}
